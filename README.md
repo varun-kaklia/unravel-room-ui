@@ -62,7 +62,7 @@ src/
 ├── App.jsx # Route config
 ├── index.css # Tailwind + Theme colors
 └── main.jsx # Root renderer with Redux + Theme wrapper
-
+```
 <br/>
 
 ## 🚀 Quick Start
