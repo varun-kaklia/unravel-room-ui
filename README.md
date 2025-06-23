@@ -25,7 +25,7 @@ All core requirements from the Unravel WebApp Challenge are fulfilled, including
 ---
 
 ## 📁 Folder Structure
-
+```plaintext
 src/
 ├── constants/ # Static JSON data
 │ └── hotels.json
