@@ -1,56 +1,67 @@
-# 🏨 Unravel Rooms – React Challenge
+# 🏨 Unravel Rooms – Frontend Challenge
 
-A responsive, performant room-listing webapp built with **Vite + React**, **Tailwind CSS v4**, and **Redux Toolkit**.  
-Every requirement in the Unravel WebApp Challenge is implemented:
+Responsive, scalable room booking interface built using **React (Vite)**, **Tailwind CSS v4**, and **Redux Toolkit**.  
+All core requirements from the Unravel WebApp Challenge are fulfilled, including:
 
-- ✅ Infinite scrolling with viewport-based media loading  
-- ✅ Videos autoplay only in view; images lazy-load with `srcSet`  
-- ✅ Price-range filter, multi-variant booking with live tax calc  
-- ✅ Light/ Dark theme switch (Redux)  
-- ✅ Favourites & Cart badges in the navbar  
-- ✅ Static `hotels.json` datasource (easily scaled to 100 + items)
+- ✅ Lazy-loading of media with viewport detection  
+- ✅ Video-first media logic with fallback to responsive images  
+- ✅ Infinite scrolling of rooms with skeleton loaders  
+- ✅ Variant selection with live tax, quantity, and cart sync  
+- ✅ Global theme toggle (dark/light)  
+- ✅ Cart and Favorites with real-time badges  
+- ✅ Clean component structure with reusable logic and scalable JSON backend  
 
-<br/>
+---
 
-## 📂 Project Structure
+## ⚙️ Tech Stack
+
+- **React 18 (Vite)**
+- **Tailwind CSS v4** (no PostCSS)
+- **Redux Toolkit**
+- **Custom hooks** (`useThrottle`, `useInViewport`, etc.)
+- **JSON-based mock data** for fast and predictable testing
+- **Heroicons** for clean iconography
+
+---
+
+## 📁 Folder Structure
 
 src/
-├ constants/ # ← static JSON with hotels & room arrays
-│ └ hotels.json
-├ assets/
-│ └ images 
-│ └ svg
-├ api/
-│ └ roomsService.js # helpers that read the JSON (paged fetch, variants, etc.)
-├ hooks/ # custom utilities (no external deps)
-│ ├ useInViewport.js
-│ ├ infiniteScroll.js
-│ └ useThrottle.js
-├ store/ # Redux Toolkit slices
-│ ├ cartSlice.js
-│ ├ favoritesSlice.js
-│ ├ themeslice.js
-│ └ index.js
-├ components/ # reusable UI
-│ ├ Navbar.jsx (cart + favourites badges, theme toggle)
-│ ├ Media.jsx (video-first / image gallery, lazy)
-│ ├ RoomCard.jsx
-│ ├ VariantCart.jsx
-│ ├ Spinner.jsx
-│ └ SkeletonCard.jsx
-├ utils/ # future api calls
-│ ├ fetchRooms.js
-├ pages/ # routed views (lazy-loaded)
-│ ├ RoomList.jsx
-│ ├ RoomDetails.jsx
-│ ├ RoomOptions.jsx
-│ ├ Variant.jsx
-│ ├ Checkout.jsx
-│ └ Success.jsx
-├ App.jsx # routes + <Navbar/>
-├ index.css # css + color variables
-└ main.jsx # Vite entry (theme wrapper + Redux Provider)
-
+├── constants/ # Static JSON data
+│ └── hotels.json
+├── assets/ # Image & SVG assets
+│ ├── images/
+│ └── svg/
+├── api/ # Logic to fetch rooms from constants
+│ └── roomsService.js
+├── hooks/ # Custom hooks (no external deps)
+│ ├── useInViewport.js
+│ ├── useThrottle.js
+│ └── infiniteScroll.js
+├── store/ # Redux Toolkit slices
+│ ├── cartSlice.js
+│ ├── favoritesSlice.js
+│ ├── themeslice.js
+│ └── index.js
+├── components/ # UI components
+│ ├── Navbar.jsx
+│ ├── Media.jsx
+│ ├── RoomCard.jsx
+│ ├── VariantCart.jsx
+│ ├── SkeletonCard.jsx
+│ └── Spinner.jsx
+├── utils/ # Future APIs, helpers
+│ └── fetchRooms.js
+├── pages/ # All routed views
+│ ├── RoomList.jsx
+│ ├── RoomDetails.jsx
+│ ├── RoomOptions.jsx
+│ ├── Variant.jsx
+│ ├── Checkout.jsx
+│ └── Success.jsx
+├── App.jsx # Route config
+├── index.css # Tailwind + Theme colors
+└── main.jsx # Root renderer with Redux + Theme wrapper
 
 <br/>
 
