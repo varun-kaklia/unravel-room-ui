@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #1e3a8a;
+  --color-accent: #10b981;
+  --color-background: #ffffff;
+  --color-text: #111827;
+}
+
+@layer theme {
+  .dark {
+    --color-primary: #93c5fd;
+    --color-accent: #34d399;
+    --color-background: #111827;
+    --color-text: #ffffff;
+  }
+}
+
+.badge{ @apply absolute -top-2 -right-2 text-xs bg-accent text-white rounded-full px-[6px]; }

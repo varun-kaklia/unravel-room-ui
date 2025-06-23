@@ -1,0 +1,409 @@
+[
+    {
+        "hotelId": "hotel-1",
+        "name": "Hotel Sunrise",
+        "stars": 4,
+        "host": "Alice",
+        "location": "Goa Beachfront",
+        "rooms": [
+            {
+                "id": "hotel-1-std",
+                "type": "Standard",
+                "price": 2200,
+                "beds": 2,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-1-dlx",
+                "type": "Deluxe",
+                "price": 2700,
+                "beds": 2,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-1-ste",
+                "type": "Suite",
+                "price": 3200,
+                "beds": 3,
+                "freeCancel": false,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-2",
+        "name": "Mountain Inn",
+        "stars": 5,
+        "host": "Carlos",
+        "location": "Manali Hills",
+        "rooms": [
+            {
+                "id": "hotel-2-std",
+                "type": "Standard",
+                "price": 2400,
+                "beds": 2,
+                "freeCancel": false,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-2-dlx",
+                "type": "Deluxe",
+                "price": 2900,
+                "beds": 3,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-2-ste",
+                "type": "Suite",
+                "price": 3600,
+                "beds": 4,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-3",
+        "name": "Cityscape Hotel",
+        "stars": 3,
+        "host": "Dina",
+        "location": "Delhi Centre",
+        "rooms": [
+            {
+                "id": "hotel-3-std",
+                "type": "Standard",
+                "price": 1800,
+                "beds": 1,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-3-dlx",
+                "type": "Deluxe",
+                "price": 2200,
+                "beds": 2,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-3-ste",
+                "type": "Suite",
+                "price": 2600,
+                "beds": 2,
+                "freeCancel": false,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-4",
+        "name": "Hotel Sunrise",
+        "stars": 4,
+        "host": "Alice",
+        "location": "Goa Beachfront",
+        "rooms": [
+            {
+                "id": "hotel-4-std",
+                "type": "Standard",
+                "price": 2200,
+                "beds": 2,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-4-dlx",
+                "type": "Deluxe",
+                "price": 2700,
+                "beds": 2,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-4-ste",
+                "type": "Suite",
+                "price": 3200,
+                "beds": 3,
+                "freeCancel": false,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-5",
+        "name": "Mountain Inn",
+        "stars": 5,
+        "host": "Carlos",
+        "location": "Manali Hills",
+        "rooms": [
+            {
+                "id": "hotel-5-std",
+                "type": "Standard",
+                "price": 2400,
+                "beds": 2,
+                "freeCancel": false,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-5-dlx",
+                "type": "Deluxe",
+                "price": 2900,
+                "beds": 3,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-5-ste",
+                "type": "Suite",
+                "price": 3600,
+                "beds": 4,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-6",
+        "name": "Cityscape Hotel",
+        "stars": 3,
+        "host": "Dina",
+        "location": "Delhi Centre",
+        "rooms": [
+            {
+                "id": "hotel-6-std",
+                "type": "Standard",
+                "price": 1800,
+                "beds": 1,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-6-dlx",
+                "type": "Deluxe",
+                "price": 2200,
+                "beds": 2,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+            },
+            {
+                "id": "hotel-6-ste",
+                "type": "Suite",
+                "price": 2600,
+                "beds": 2,
+                "freeCancel": false,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-7",
+        "name": "Hotel Sunrise",
+        "stars": 4,
+        "host": "Alice",
+        "location": "Goa Beachfront",
+        "rooms": [
+            {
+                "id": "hotel-7-std",
+                "type": "Standard",
+                "price": 2200,
+                "beds": 2,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-7-dlx",
+                "type": "Deluxe",
+                "price": 2700,
+                "beds": 2,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-7-ste",
+                "type": "Suite",
+                "price": 3200,
+                "beds": 3,
+                "freeCancel": false,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-8",
+        "name": "Mountain Inn",
+        "stars": 5,
+        "host": "Carlos",
+        "location": "Manali Hills",
+        "rooms": [
+            {
+                "id": "hotel-8-std",
+                "type": "Standard",
+                "price": 2400,
+                "beds": 2,
+                "freeCancel": false,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-8-dlx",
+                "type": "Deluxe",
+                "price": 2900,
+                "beds": 3,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4",
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-8-ste",
+                "type": "Suite",
+                "price": 3600,
+                "beds": 4,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    },
+    {
+        "hotelId": "hotel-9",
+        "name": "Cityscape Hotel",
+        "stars": 3,
+        "host": "Dina",
+        "location": "Delhi Centre",
+        "rooms": [
+            {
+                "id": "hotel-9-std",
+                "type": "Standard",
+                "price": 1800,
+                "beds": 1,
+                "freeCancel": true,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            },
+            {
+                "id": "hotel-9-dlx",
+                "type": "Deluxe",
+                "price": 2200,
+                "beds": 2,
+                "freeCancel": true,
+                "video_url": "https://www.w3schools.com/html/mov_bbb.mp4"
+            },
+            {
+                "id": "hotel-9-ste",
+                "type": "Suite",
+                "price": 2600,
+                "beds": 2,
+                "freeCancel": false,
+                "room_images": [
+                    "https://picsum.photos/seed/101/800/600",
+                    "https://picsum.photos/seed/101/400/300",
+                    "https://picsum.photos/seed/101/200/150"
+                ]
+            }
+        ]
+    }
+]
