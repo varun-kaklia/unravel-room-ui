@@ -1,12 +1,66 @@
-# React + Vite
+# 🏨 Unravel Rooms – React Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, performant room-listing webapp built with **Vite + React**, **Tailwind CSS v4**, and **Redux Toolkit**.  
+Every requirement in the Unravel WebApp Challenge is implemented:
 
-Currently, two official plugins are available:
+- ✅ Infinite scrolling with viewport-based media loading  
+- ✅ Videos autoplay only in view; images lazy-load with `srcSet`  
+- ✅ Price-range filter, multi-variant booking with live tax calc  
+- ✅ Light/ Dark theme switch (Redux)  
+- ✅ Favourites & Cart badges in the navbar  
+- ✅ Static `hotels.json` datasource (easily scaled to 100 + items)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br/>
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├ constants/ # ← static JSON with hotels & room arrays
+│ └ hotels.json
+├ assets/
+│ └ images 
+│ └ svg
+├ api/
+│ └ roomsService.js # helpers that read the JSON (paged fetch, variants, etc.)
+├ hooks/ # custom utilities (no external deps)
+│ ├ useInViewport.js
+│ ├ infiniteScroll.js
+│ └ useThrottle.js
+├ store/ # Redux Toolkit slices
+│ ├ cartSlice.js
+│ ├ favoritesSlice.js
+│ ├ themeslice.js
+│ └ index.js
+├ components/ # reusable UI
+│ ├ Navbar.jsx (cart + favourites badges, theme toggle)
+│ ├ Media.jsx (video-first / image gallery, lazy)
+│ ├ RoomCard.jsx
+│ ├ VariantCart.jsx
+│ ├ Spinner.jsx
+│ └ SkeletonCard.jsx
+├ utils/ # future api calls
+│ ├ fetchRooms.js
+├ pages/ # routed views (lazy-loaded)
+│ ├ RoomList.jsx
+│ ├ RoomDetails.jsx
+│ ├ RoomOptions.jsx
+│ ├ Variant.jsx
+│ ├ Checkout.jsx
+│ └ Success.jsx
+├ App.jsx # routes + <Navbar/>
+├ index.css # css + color variables
+└ main.jsx # Vite entry (theme wrapper + Redux Provider)
+
+
+<br/>
+
+## 🚀 Quick Start
+
+```bash
+# 1 – Install deps
+npm install
+
+# 2 – Start dev server
+npm run dev
+# → http://localhost:5173
+<br/>
