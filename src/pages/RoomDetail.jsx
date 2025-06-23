@@ -7,7 +7,6 @@ import { StarIcon } from '@heroicons/react/20/solid';
 export default function RoomDetails() {
   const { id } = useParams();
   const [room, setRoom] = useState(null);
-  console.log("Rooms details",room)
 
 
 //   useEffect(()=>{

@@ -35,7 +35,6 @@ export function getHotelById(hotelId) {
 
 export function getRoomVariants(hotelId) {
   const hotel = hotels.find(h => h.hotelId === hotelId);
-  console.log("hotel",hotel);
   return new Promise(res =>
     setTimeout(() => res(hotel ? hotel.rooms : []), 300)
   );
